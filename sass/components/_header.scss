@@ -1,7 +1,10 @@
 .header {
     border-bottom: 1px solid #EEEEEE;
-    height: 80px;
+    /*height: 80px;*/
     display: flex;
+    @media screen and(min-width: 768px) {
+        height: 80px;
+    }
 }
 
 .container__header {
@@ -17,7 +20,15 @@
     @extend %logo;
     text-transform: capitalize;
     color: $second-color;
-    margin-right: 93px;
+    /*margin-right: 93px;*/
+    @media screen and(min-width: 768px) {
+        margin-right: auto;
+        margin-left: 0;
+        margin-right: 88px;
+    }
+    @media screen and(min-width:1200px) {
+        margin-right: 93px;
+    }
 }
 
 .navbar__logo--colored {
@@ -26,10 +37,19 @@
 
 .navbar__list {
     display: flex;
+    @media screen and(max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .navbar__item:not(:last-child) {
-    margin-right: 50px;
+    /*margin-right: 50px;*/
+    @media screen and(max-width: 767px) {
+        margin-bottom: 32px;
+    }
+    @media screen and(min-width:768px) {
+        margin-right: 50px;
+    }
 }
 
 .navbar__link {
@@ -40,6 +60,11 @@
     padding-bottom: 32px;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and(min-width: 768px) {
+        padding: 32px 0;
+        font-size: 14px;
+        line-height: 1.4;
+    }
 }
 
 .navbar__link.navbar__link--current::after {
@@ -52,6 +77,9 @@
     background-color: $accent-color;
     bottom: 0;
     left: 0;
+    @media screen and(max-width: 767px) {
+        display: none;
+    }
     &:hover,
     &:focus {
         color: $accent-color;
@@ -62,10 +90,17 @@
     color: $accent-color;
 }
 
-.contacts {
+.contacts__list {
     display: flex;
     margin-left: auto;
     align-items: center;
+    @media screen and(min-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @media screen and(min-width:1200px) {
+        flex-direction: row;
+    }
 }
 
 .contacts__item:not(:last-child) {
@@ -82,6 +117,19 @@
     &:focus {
         color: $accent-color;
     }
+    @media screen and(max-width:767px) {
+        font-size: 34px;
+        line-height: 1.17;
+        color: $accent-color;
+    }
+}
+
+.contacts__link--size {
+    @media screen and(max-width: 767px) {
+        font-size: 24px;
+        line-height: 1.16;
+        color: $main-color;
+    }
 }
 
 .contacts__icon {
@@ -97,5 +145,8 @@
     .contacts__link:hover &,
     .contacts__link:focus & {
         fill: $accent-color;
+    }
+    @media screen and(max-width: 767px) {
+        display: none;
     }
 }
