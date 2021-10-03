@@ -4,7 +4,16 @@
         background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgimg.jpg);
         background-size: cover;
         background-position: center;
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        /*@media screen and(min-width: 480px) {
+            width: 480px;
+        }
+        @media screen and(min-width: 768px) {
+            width: 768px;
+        }
+        @media screen and(min-width: 1200px) {
+            width: 1200px;
+        }*/
+        @media screen and(min-width: 480px) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../image/heromob.jpg');
         }
         @media (min-device-pixel-ratio: 2),
@@ -43,7 +52,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
-        @media screen and(max-width: 1199px) {
+        @media screen and(min-width: 480px) {
             font-size: 26px;
             line-height: 42px;
         }
