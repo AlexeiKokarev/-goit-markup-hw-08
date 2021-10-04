@@ -4,7 +4,10 @@
     /*display: flex;*/
     @media screen and(min-width: 480px) {
         width: 480px;
-        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
     }
     @media screen and(min-width: 768px) {
         width: 768px;
@@ -14,14 +17,16 @@
     }
 }
 
-.container__header {
-    /*display: flex;*/
-}
 
-.navbar {
+/*.container__header {
+    display: flex;
+}*/
+
+
+/*.navbar {
     display: flex;
     align-items: center;
-}
+}*/
 
 .navbar__logo {
     @extend %logo;
