@@ -18,6 +18,37 @@
     <header class="header">
         <div class="container container__header">
             <a href="#" class="navbar__logo"><span class="navbar__logo--colored">Web</span>Studio </a>
+            <nav class="navbar">
+
+                <ul class="navbar__list navbar__list--none">
+                    <li class="navbar__item">
+                        <a class="navbar__link navbar__link--current" href="./index.html">Студия</a></li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="contacts ">
+                <ul class="contacts__list contacts--none">
+                    <li class="contacts__item">
+                        <a class="contacts__link contacts__link--size" href="info@devstudio.com">
+                            <svg class="contacts__icon" width="16" height="12">
+                          <use href="./image/sprite.svg#icon-mail"></use>
+                        </svg> info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="+380961111111">
+                            <svg class="contacts__icon" width="10" height="16">
+                            <use href="./image/sprite.svg#icon-smartphone">
+                            </use>
+                        </svg> +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <button class="menu-on js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="menu__icon" width="40" height="40">
                 <use href="./image/sprite.svg#icon-menu_40px"></use>
@@ -41,8 +72,8 @@
                             <a class="navbar__link" href="./#">Контакты</a></li>
                     </ul>
                 </nav>
-                <div class="contacts">
-                    <ul class="contacts__list">
+                <div class="contacts--mob">
+                    <ul class="contacts__list--mob">
                         <li class="contacts__item">
                             <a class="contacts__link contacts__link--size" href="info@devstudio.com">
                                 <svg class="contacts__icon" width="16" height="12">
@@ -130,17 +161,17 @@
             <div class="container">
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="work">
-                    <li class="work__item"><img srcset="./image/imgb1.jpg 370w, ./image/imgb1@2x.jpg 740w" sizes="(min-width: 1200px) 33vw, 93.75vw" src="./image/imgb1.jpg" alt="desktop apps" />
+                    <li class="work__item"><img class="work__img" srcset="./image/imgb1.jpg 370w, ./image/imgb1@2x.jpg 740w" sizes="(min-width: 1200px) 33vw, 93.75vw" src="./image/imgb1.jpg" alt="desktop apps" />
                         <div class="work__box">
                             <h3 class="work__title">дестопные приложения</h3>
                         </div>
                     </li>
-                    <li class="work__item"><img srcset="./image/imgb2.jpg 370w, ./image/imgb2@2x.jpg 740w" sizes="(min-width: 1200px) 33vw, 93.75vw" src="./image/imgb2.jpg" alt="mobile apps">
+                    <li class="work__item"><img class="work__img" srcset="./image/imgb2.jpg 370w, ./image/imgb2@2x.jpg 740w" sizes="(min-width: 1200px) 33vw, 93.75vw" src="./image/imgb2.jpg" alt="mobile apps">
                         <div class="work__box">
                             <h3 class="work__title">мобильные приложения</h3>
                         </div>
                     </li>
-                    <li class="work__item"><img srcset="./image/imgb3.jpg 370w, ./image/imgb3@2x.jpg 740w" sizes="(min-width: 1200px) 33vw, 93.75vw" src="./image/imgb3.jpg" alt="designe">
+                    <li class="work__item"><img class="work__img" srcset="./image/imgb3.jpg 370w, ./image/imgb3@2x.jpg 740w" sizes="(min-width: 1200px) 33vw, 93.75vw" src="./image/imgb3.jpg" alt="designe">
                         <div class="work__box">
                             <h3 class="work__title">дизайнерские решения</h3>
                         </div>

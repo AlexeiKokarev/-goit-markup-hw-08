@@ -17,9 +17,10 @@
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     @media screen and(min-width: 768px) {
-        flex-direction: row;
+        /*flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between;*/
+        display: none;
     }
 }
 
@@ -71,18 +72,26 @@
     display: flex;
 }
 
-.contacts {
+.contacts--mob {
     display: flex;
     flex-grow: 1;
     @media screen and(max-width: 767px) {
         flex-direction: column;
     }
-    @media screen and(min-width: 768px) {
+}
+
+.contact__list--mob {
+    @media screen and(min-width: 480px) {
+        display: flex;
+        margin-left: auto;
         align-items: center;
-        margin-left: 80px;
-    }
-    @media screen and(min-width: 1200px) {
-        margin-left: 300px;
+        /*display: flex;
+    flex-direction: column-reverse;*/
+        @media screen and(max-width: 767px) {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column-reverse;
+        }
     }
 }
 
