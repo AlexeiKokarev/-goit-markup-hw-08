@@ -19,13 +19,13 @@
         <div class="container container__header">
             <a href="#" class="navbar__logo"><span class="navbar__logo--colored">Web</span>Studio </a>
             <button class="menu-on js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="menu__icon" width="24" height="16">
+            <svg class="menu__icon" width="40" height="40">
                 <use href="./image/sprite.svg#icon-menu_40px"></use>
             </svg>
             </button>
             <div class="menu-container js-menu-container" id="mobile-menu">
                 <button class="menu-off js-close-menu">
-                    <svg class="menu__icon" width="24" height="16">
+                    <svg class="menu__icon" width="20" height="16">
                         <use href="./image/sprite.svg#icon-close_24px"></use>
                     </svg>
                 </button>
@@ -153,7 +153,7 @@
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team">
-                    <li class="team__item"><img srcset="./image/igormob.jpg 450w,
+                    <li class="team__item"><img class="team__img" srcset="./image/igormob.jpg 450w,
                                      ./image/igormob@2x.jpg 900w" sizes="(min-width: 1200px) 25vw,
                                    (min-width: 768px) 50vw, 93.75vw" src="./image/igormob.jpg" alt="teammate">
                         <div class="team__box">
@@ -187,7 +187,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img srcset="./image/olgamob.jpg 450w,
+                    <li class="team__item"><img class="team__img" srcset="./image/olgamob.jpg 450w,
                                      ./image/olgamob@2x.jpg 900w" sizes="(min-width: 1200px) 25vw,
                                    (min-width: 768px) 50vw,(min-width: 480px) 93.75vw" src="./image/olgamob.jpg" alt="teammate">
                         <div class="team__box">
@@ -222,7 +222,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img srcset="./image/nikolaimob.jpg 450w,
+                    <li class="team__item"><img class="team__img" srcset="./image/nikolaimob.jpg 450w,
                                      ./image/nikolaimob@2x.jpg 900w" sizes="(min-width: 1200px) 25vw,
                                    (min-width: 768px) 50vw, 93.75vw" src="./image/nikolaimob.jpg" alt="teammate">
                         <div class="team__box">
@@ -256,7 +256,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team__item"><img srcset="./image/mihailmob.jpg 450w,
+                    <li class="team__item"><img class="team__img" srcset="./image/mihailmob.jpg 450w,
                                      ./image/mihailmob@2x.jpg 900w" sizes="(min-width: 1200px) 25vw,
                                    (min-width: 768px) 50vw, 93.75vw" src="./image/mihailmob.jpg" alt="teammate">
                         <div class="team__box">
@@ -380,7 +380,7 @@
 
 
     </footer>
-    <div class=" window " data-modal>
+    <div class=" window is-hidden" data-modal>
         <div class="window__modal "><button type="button " class="window__modal-button " data-modal-close>
             <svg class="window__close-icon ">
             <use href="./image/closebtn.svg#icon-closebtn "></use></svg></button>
@@ -423,4 +423,5 @@
         </div>
     </div>
     <script src="./js/modal.js "></script>
+    <script src="./js/mobile-menu.js "></script>
 </body>
