@@ -12,7 +12,7 @@
         background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/heromob.jpg);
         /*background-size: cover;
         background-position: center;
-        /*@media screen and(min-width: 480px) {
+        /*@media screen and(max-width: 767px) {
             width: 480px;
         }
         @media screen and(min-width: 768px) {
@@ -21,7 +21,7 @@
         @media screen and(min-width: 1200px) {
             width: 1200px;
         }*/
-        @media screen and(min-width: 480px) {
+        @media screen and(max-width: 767px) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../image/heromob.jpg');
         }
         @media (min-device-pixel-ratio: 2),
@@ -60,9 +60,10 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
-        @media screen and(min-width: 480px) {
+        @media screen and(max-width: 1199px) {
+            width: 360px;
             font-size: 26px;
-            line-height: 42px;
+            line-height: 1.61;
         }
         @media screen and(min-width: 1200px) {
             font-size: 44px;
@@ -102,7 +103,7 @@
         background-color: rgba(0, 0, 0, 0.2);
         opacity: 1;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        /*@media screen and(min-width: 480px) {
+        /*@media screen and(max-width: 767px) {
             width: 450px;
         }
         @media screen and(min-width: 1200px) {
@@ -134,13 +135,13 @@
     
     .window__form {
         margin: 40px;
-        @media screen and(min-width: 480px) {
+        @media screen and(max-width: 767px) {
             width: 370px;
             height: 58px;
         }
-        @media screen and(min-width:1200px) {
+        /*@media screen and(min-width:1200px) {
             width: 528px;
-        }
+        }*/
     }
     
     .window__modal-button {
@@ -186,7 +187,7 @@
         color: $second-color;
         margin-top: 40px;
         margin-bottom: 12px;
-        @media screen and(min-width: 480px) {
+        @media screen and(max-width: 767px) {
             width: 370px;
             line-height: 1.5;
             margin-left: 40px;
@@ -275,9 +276,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @media screen and(min-width: 1200px) {
+        /*@media screen and(min-width: 1200px) {
             margin-left: 43px;
-        }
+        }*/
     }
     
     .window__checkbox-icon {
@@ -301,7 +302,7 @@
         align-items: center;
         justify-content: center;
         /*margin-bottom: 30px;*/
-        @media screen and(min-width: 480px) {
+        @media screen and(max-width: 767px) {
             font-size: 12px;
             line-height: 1.16;
             /*margin-bottom: 31px;*/
